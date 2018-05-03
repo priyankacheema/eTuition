@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="" title="eTutor"  description="">
+        <siteMapNode url="~/WelcomeTut.aspx" title="Welcome"  description="" />
+        <siteMapNode url="~/RegisterTut.aspx" title="Registration"  description="" />
+      <siteMapNode url="~/LoginTutor.aspx" title="eTutor Login"  description="" />
+    </siteMapNode>
+
+  <siteMapNode url="" title="Students"  description="">
+    <siteMapNode url="~/WelcomeStu.aspx" title="Welcome"  description="" />
+    <siteMapNode url="~/RegisterStu.aspx" title="Registration"  description="" />
+    <siteMapNode url="~/LoginStudent.aspx" title="Student Login"  description="" />
+    <siteMapNode url="~/Fees.aspx" title="Fees Details"  description="" />
+    <siteMapNode url="~/Payment.aspx" title="Payment Methods"  description="" />
+    <siteMapNode url="~/FreeResources.aspx" title="Free Resources"  description="" />
+  </siteMapNode>
+
+    <siteMapNode url="" title="Parents"  description="">
+      <siteMapNode url="~/WelcomeParent.aspx" title="Welcome"  description="" />
+      <siteMapNode url="~/RegisterParent.aspx" title="Registration"  description="" />
+      <siteMapNode url="~/LoginParent.aspx" title="Parent Login"  description="" />
+    
+  </siteMapNode>
+  </siteMapNode>
+</siteMap>
