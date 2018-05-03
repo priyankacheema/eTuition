@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<%@ Register src="SubHeader.ascx" tagname="SubHeader" tagprefix="uc1" %>
+<%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 118%;
+            height: 898px;
+        }
+        .style5
+        {
+            width: 252px;
+            height: 536px;
+        }
+        .style6
+        {
+            width: 868px;
+            height: 536px;
+        }
+        .style7
+        {
+            width: 22px;
+            height: 536px;
+        }
+        .style8
+        {
+            height: 536px;
+        }
+        #form1
+        {
+            height: 1040px;
+        }
+        .style9
+        {
+            width: 100%;
+            height: 46px;
+        }
+        .style10
+        {
+            width: 478px;
+        }
+        .style11
+        {
+            width: 650px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <p>
+        <asp:Image ID="Image2" runat="server" Height="64px" 
+            ImageUrl="~/Images/logo.png" Width="1359px" />
+            </p>
+   
+        <uc1:SubHeader ID="SubHeader2" runat="server" />
+    <p>
+        
+        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Header.xml" 
+            Height="239px" Width="1333px" />
+        
+    </p>
+    
+    </div>
+    <br />
+    <table class="style1">
+
+    <td Width="266px" bgcolor="#990033" class="style8">
+    
+    </td>
+       <td valign="top" class="style5">
+                <asp:TreeView ID="TreeView1" runat="server" BackColor="#99CCFF" 
+                    BorderColor="#0066FF" BorderStyle="Dotted" DataSourceID="SiteMapDataSource1" 
+                    Font-Bold="True" Font-Italic="True" Font-Size="X-Large" Height="498px" 
+                    Width="266px">
+                </asp:TreeView>
+            </td>
+            <td class="style7"></td>
+            <td valign="top" class="style6">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="border-width: thick; width: 847px">
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            
+            <td Width="266px" bgcolor="#990033" class="style8">
+    </td>
+            
+        </tr>
+        </table>
+    <table class="style9">
+        <tr>
+            <td bgcolor="#990033" class="style10">
+                &nbsp;</td>
+            <td bgcolor="#990033" class="style11">
+                <uc2:Footer ID="Footer2" runat="server" />
+            </td>
+            <td bgcolor="#990033">
+                &nbsp;</td>
+        </tr>
+    </table>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+        ShowStartingNode="False" />
+    </form>
+</body>
+</html>

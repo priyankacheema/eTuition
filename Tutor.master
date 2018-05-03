@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Tutor.master.cs" Inherits="Tutor" %>
+
+<%@ Register src="SubHeader.ascx" tagname="SubHeader" tagprefix="uc1" %>
+
+<%@ Register src="TutorMenu.ascx" tagname="TutorMenu" tagprefix="uc2" %>
+
+<%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            width: 100%;
+            height: 499px;
+        }
+        .style8
+        {
+            width: 263px;
+            height: 488px;
+        }
+        .style9
+        {
+            width: 2px;
+            height: 488px;
+        }
+        .style10
+        {
+            width: 902px;
+            height: 488px;
+        }
+        .style11
+        {
+            height: 488px;
+        }
+        .style12
+        {
+            width: 100%;
+        }
+        .style13
+        {
+            width: 478px;
+        }
+        .style14
+        {
+            width: 266px;
+            height: 488px;
+        }
+        .style15
+        {
+            width: 646px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <p>
+        <asp:Image ID="Image1" runat="server" Height="64px" 
+            ImageUrl="~/Images/logo.png" Width="1359px" />
+        </p>
+        <p>
+            <uc1:SubHeader ID="SubHeader1" runat="server" />
+        </p>
+        <p>
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Header.xml" 
+                Height="239px" Width="1333px" />
+        </p>
+    </div>
+        <table class="style2">
+            <tr>
+                <td bgcolor="#990033" class="style14">
+                    </td>
+                <td valign="top" class="style8">
+                    <uc2:TutorMenu ID="TutorMenu1" runat="server" />
+                </td>
+                <td class="style9">
+                    </td>
+                <td  valign="top" class="style10">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td bgcolor="#990033" class="style11" width="266px">
+                    </td>
+            </tr>
+        </table>
+    <table class="style12">
+        <tr>
+            <td bgcolor="#990033" class="style13">
+                &nbsp;</td>
+            <td bgcolor="#990033" class="style15">
+                <uc3:Footer ID="Footer1" runat="server" />
+            </td>
+            <td bgcolor="#990033">
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
